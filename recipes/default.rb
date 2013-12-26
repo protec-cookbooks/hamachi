@@ -9,7 +9,7 @@
 
 deps = ["lsb-core"]
 
-deps.each |dep| do
+deps.each do |dep|
     package dep do
         action :install
     end
