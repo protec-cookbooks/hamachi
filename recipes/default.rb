@@ -7,6 +7,14 @@
 # All rights reserved - Do Not Redistribute
 #
 
+deps = ["lsb-core"]
+
+deps.each |dep| do
+    package dep do
+        action :install
+    end
+end
+
 remote_file "/tmp/logmein-hamachi_2.1.0.119-1_amd64.deb" do
   source "https://secure.logmein.com/labs/logmein-hamachi_2.1.0.119-1_amd64.deb"
   mode 0644
