@@ -27,7 +27,7 @@ dpkg_package "hamachi" do
 end
 
 apt_repository "haguichi" do
-  uri "http://ppa.launchpad.net/webupd8team/ppa/haguichi"
+  uri "http://ppa.launchpad.net/webupd8team/haguichi/ubuntu"
   distribution node['lsb']['codename']
   components ["main"]
   keyserver "keyserver.ubuntu.com"
