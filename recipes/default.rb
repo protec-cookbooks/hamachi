@@ -15,14 +15,14 @@ deps.each do |dep|
     end
 end
 
-remote_file "/tmp/logmein-hamachi_2.1.0.136-1_amd64.deb" do
-  source "https://secure.logmein.com/labs/logmein-hamachi_2.1.0.136-1_amd64.deb"
+remote_file "/tmp/logmein-hamachi_2.1.0.139-1_amd64.deb" do
+  source "https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb"
   mode 0644
   checksum "950a4789afafe2920b94b3b425b56d007a24f55ff053c9b64406c77a61e66529"
 end
 
 dpkg_package "hamachi" do
-  source "/tmp/logmein-hamachi_2.1.0.136-1_amd64.deb"
+  source "/tmp/logmein-hamachi_2.1.0.139-1_amd64.deb"
   action :install
 end
 
