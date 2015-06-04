@@ -18,7 +18,7 @@ end
 remote_file "/tmp/logmein-hamachi_2.1.0.139-1_amd64.deb" do
   source "https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb"
   mode 0644
-  checksum "950a4789afafe2920b94b3b425b56d007a24f55ff053c9b64406c77a61e66529"
+  checksum "c7b70b1529384a4fcbccf662da1ee4bab4d7fd3168ca8d87916571b893bb4d44"
 end
 
 dpkg_package "hamachi" do
